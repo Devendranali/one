@@ -5,7 +5,7 @@ FROM tomcat:9.0-jdk11
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the WAR file into the Tomcat webapps directory
-COPY target/myweb-8.6.5.war /usr/local/tomcat/webapps/
+COPY target/myweb-8.6.5.war /usr/local/tomcat/webapps/Root.war
 
 # Expose port 8081 to access the application
 EXPOSE 8081
