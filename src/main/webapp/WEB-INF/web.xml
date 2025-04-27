@@ -1,19 +1,13 @@
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" 
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    
-    <!-- Define the HelloServlet -->
-    <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>com.example.HelloServlet</servlet-class> <!-- Replace with your actual package/class -->
-    </servlet>
-    
-    <!-- Map the servlet to the /hello URL -->
-    <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/hello</url-pattern> <!-- Make sure this matches the URL in the link -->
-    </servlet-mapping>
-    
+
+    <!-- Welcome file configuration -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
 </web-app>
