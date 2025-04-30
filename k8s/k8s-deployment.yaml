@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata:
   name: one_app
 spec:
   replicas: 1
@@ -14,9 +14,6 @@ spec:
     spec:
       containers:
       - name: one_app
-        image: one:1
+        image: __ECR_IMAGE__  # Placeholder for the ECR image URI
         ports:
-          - containerPort: 8080
-          
-      
-      
+        - containerPort: 8080
