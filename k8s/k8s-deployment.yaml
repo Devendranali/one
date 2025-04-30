@@ -17,3 +17,5 @@ spec:
         image: __ECR_IMAGE__  # Placeholder for the ECR image URI
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: ecr-secret
