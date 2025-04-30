@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: one_app_service
+  name: one-app-service
 spec:
   selector:
-    app: one_app
+    app: one-app
   type: NodePort
   ports: 
-    - protocol: tcp
+    - protocol: TCP
       port: 80
       targetPort: 8080
       nodePort: 30001
