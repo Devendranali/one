@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: one_app
+  name: one-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: one_app
+      app: one-app
   template:
     metadata:
       labels:
-        app: one_app
+        app: one-app
     spec:
       containers:
-      - name: one_app
+      - name: one-app
         image: __ECR_IMAGE__  # Placeholder for the ECR image URI
         ports:
         - containerPort: 8080
